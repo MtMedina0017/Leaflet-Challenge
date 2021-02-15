@@ -82,7 +82,7 @@ var overlayMaps = {
   Earthquakes: earthquakes
 };
 
-var myMap = L.map("mapid", {
+var mapId = L.map("mapid", {
   center: [
     37.09, -95.71
   ],
@@ -93,7 +93,7 @@ var myMap = L.map("mapid", {
 L.control.layers(baseMaps, overlayMaps, {
   collapsed: false
 
-}).addTo(myMap);
+}).addTo(mapId);
 
 // an object legend
 var legend = L.control({
@@ -124,11 +124,11 @@ for (var i = 0; i < depth.length; i++) {
 return div;
 };
 
-legend.addTo(myMap);
+legend.addTo(mapId);
 
 }
 
-// set different color from depth
+// Color the depth
 function getColor(depth) {
   switch (true) {
   case depth > 90:
@@ -145,7 +145,7 @@ function getColor(depth) {
     return "#98ee00";
   }
 }
-// set radiuss from magnitude
+// Magnitude radius
   function getRadius(magnitude) {
   if (magnitude === 0) {
     return 1;
