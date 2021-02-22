@@ -1,4 +1,4 @@
-const API_KEY = "pk.eyJ1IjoibXRtZWRpbmEwMDE3IiwiYSI6ImNra3JrYzE5MjBkYTkycWxqdms4aTlmNTYifQ.LMyBlTCSu9zxE_pSUeCcDw";
+const API_KEY = ;
 
 // Creating URL
 var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
